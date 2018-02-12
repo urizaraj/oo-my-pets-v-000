@@ -2,7 +2,7 @@ class Cat
   attr_reader :name
 
   def initialize(name)
-    self.name = name
+    @name = name
   end
 
 end
