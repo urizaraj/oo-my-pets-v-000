@@ -22,7 +22,7 @@ class Owner
   end
 
   def say_species
-    "I am a #{self.species}"
+    "I am a #{self.species}."
   end
 
   def buy_fish(name)
@@ -52,7 +52,14 @@ class Owner
   def sell_pets
     self.pets.each_value do |pets|
       pets.each { |pet| pet.mood = 'nervous'}
-      pets = []
     end
+
+    self.pets = {
+      fishes: [],
+      dogs: [],
+      cats: []
+    }
   end
+
+  
 end
