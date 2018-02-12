@@ -3,7 +3,7 @@ class Owner
   attr_reader :species
   attr_accessor :name
 
-  def initialize(species, name)
+  def initialize(species)
     @@all << self
     @species = species
     self.name = name
